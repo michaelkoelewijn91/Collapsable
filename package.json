@@ -1,6 +1,6 @@
 {
     "name": "@mkoelewijn/collapsable",
-    "version": "0.10.0",
+    "version": "1.0.0",
     "description": "",
     "main": "src/index.js",
     "repository": {
@@ -17,7 +17,8 @@
         "build-dev": "node_modules/.bin/webpack --config webpack.config.js --env.dev",
         "build-prod": "node_modules/.bin/webpack --config webpack.config.js --env.prod",
         "watch": "node_modules/.bin/webpack --config webpack.config.js --progress --colors --watch --env.dev",
-        "publish_minor": "npm version minor"
+        "publish_minor": "npm version minor",
+        "publish_patch": "npm version patch"
     },
     "devDependencies": {
         "@babel/core": "^7.13.8",
