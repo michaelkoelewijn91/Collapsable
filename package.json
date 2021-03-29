@@ -16,9 +16,7 @@
     "scripts": {
         "build-dev": "node_modules/.bin/webpack --config webpack.config.js --env.dev",
         "build-prod": "node_modules/.bin/webpack --config webpack.config.js --env.prod",
-        "watch": "node_modules/.bin/webpack --config webpack.config.js --progress --colors --watch --env.dev",
-        "publish_minor": "npm version minor && npm publish",
-        "publish_patch": "npm version patch && npm publish"
+        "watch": "node_modules/.bin/webpack --config webpack.config.js --progress --colors --watch --env.dev"
     },
     "devDependencies": {
         "@babel/core": "^7.13.8",
