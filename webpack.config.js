@@ -1,8 +1,8 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const Path = require('path');
 
 module.exports = {
     mode: 'development',
+    devtool: 'source-map',
     context: Path.join(__dirname, './src'),
     entry: {
         index: [
@@ -11,7 +11,8 @@ module.exports = {
     },
     output: {
         filename: `[name].js`,
-        path: Path.resolve(__dirname, 'lib'),
+        path: Path.resolve(__dirname, 'dist'),
+        publicPath: '/dist/',
     },
     module: {
         rules: [
@@ -20,9 +21,4 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        new CleanWebpackPlugin([
-            './public/assets/build/*',
-        ]),
-    ],
 };

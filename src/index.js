@@ -30,12 +30,12 @@ export default class Collapsable {
         
         // If panel is open and close callback has been passed
         if(this.active && this.options?.closeStart) {
-            this.options.closeStart(this.node)
+            this.options.closeStart(this)
         }
         
         // If panel is closed and open callback has been passed
         if(!this.active && this.options?.openStart) {
-            this.options.openStart(this.node)
+            this.options.openStart(this)
         }
 
         // Toggle collapsable content
@@ -48,7 +48,7 @@ export default class Collapsable {
         // Await rest of script untill timeout completes
         if(!this.active) {
             await new Promise((resolve) => {
-                setTimeout(resolve, this.options?.speed ?? DURATION);
+                setTimeout(resolve, this.options?.speed ?? this.speed);
             })
         }
 
