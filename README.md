@@ -2,6 +2,7 @@
 
 **Collapsable** is a lightweight and flexible plugin that will let you create collapsable content.
 Use it for FAQ's, More information toggles or any way you see fit.
+A jQuery dependency is currently required. A native JS solution will be added in the near future.
 
 ### Installation
 Want to use npm?
